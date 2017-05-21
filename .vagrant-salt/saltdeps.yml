@@ -1,0 +1,4 @@
+name: ecs
+deps:
+  docker:
+    git: git@github.com:tyauvil/docker-formula.git

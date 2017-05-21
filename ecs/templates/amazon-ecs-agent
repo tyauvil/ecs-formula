@@ -1,0 +1,9 @@
+{%- from 'ecs/settings.sls' import ecs with context -%}
+ECS_CLUSTER={{ ecs.cluster_name }}
+ECS_DATADIR={{ ecs.datadir }}
+ECS_LOGLEVEL={{ ecs.loglevel }}
+ECS_AVAILABLE_LOGGING_DRIVERS='{{ ecs.available_logging_drivers }}'
+ECS_ENGINE_AUTH_TYPE={{ ecs.engine_auth_type }}
+ECS_ENGINE_AUTH_DATA='{{ ecs.engine_auth_data }}'
+ECS_ENABLE_TASK_IAM_ROLE=true
+ECS_PORT={{ ecs.port }}
